@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+
+
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Напишите ваше имя" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Начинки:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkboxKrem"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Взбитый кремом" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkboxShokolad"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Шоколадный" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Колличество:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:onClick="onClickMinus"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:text="-" />
+
+
+
+        <TextView
+            android:id="@+id/txtShet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:textSize="30sp" />
+
+        <Button
+            android:onClick="onClickPlus"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Будет стоит:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/txtSum"
+            android:layout_marginLeft="10dp"
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:text="Сом"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickShow"
+        android:text="Заказать"
+        android:textSize="10sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/design_default_color_error" />
+
+    <TextView
+        android:id="@+id/txtNameShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Имя" />
+
+    <TextView
+        android:id="@+id/txtShow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вы выбрали начинку:" />
+
+    <TextView
+        android:id="@+id/txtKremShow"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:text="крем" />
+
+    <TextView
+        android:id="@+id/txtShokoShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="шоко" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtShow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Выбрано колличество:" />
+
+        <TextView
+            android:id="@+id/txtKolShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Сумма:" />
+
+        <TextView
+            android:id="@+id/txtPriceShet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/som"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Сом" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtKomentShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Спасибо за заказ!!!!" />
+
+
+
+
+</LinearLayout>
